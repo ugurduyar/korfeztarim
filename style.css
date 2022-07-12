@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar{
     display: flex;
@@ -68,7 +68,7 @@ p{
     background: whitesmoke;
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#96E4DF,#4DCCC6);
 }
 .header .row{
     margin-top: 70px;
