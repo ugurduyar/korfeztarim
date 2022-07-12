@@ -150,7 +150,7 @@ small{
     display: none;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
     nav ul {
         position: absolute;
         top: 70px;
@@ -172,5 +172,14 @@ small{
     .menu-icon{
         display: block;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row{
+        text-align: center;
+    }
+    .col2 , .col3 , .col4 {
+        flex-basis: 100%;
     }
 }
