@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -53,5 +56,20 @@ p{
     margin: 25px 0;
 }
 .btn{
-    dis
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.6s;
+}
+.btn:hover{
+    background: whitesmoke;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.header .row{
+    margin-top: 70px;
 }
