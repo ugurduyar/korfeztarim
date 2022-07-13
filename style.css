@@ -158,9 +158,10 @@ small{
 }
 
 @media only screen and (max-width: 900px){
+    
     nav ul {
         position: absolute;
-        top: 70px;
+        top: 100px;
         left: 0;
         background: #333;
         width: 100%;
