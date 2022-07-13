@@ -195,6 +195,10 @@ select:focus{
     top: 202px;
     border-radius: 8px;
     text-align: left;
+    border: 0px;
+}
+.mailform .text:focus{
+    outline: none;
 }
 .mailform .email {
     position: absolute;
@@ -205,15 +209,20 @@ select:focus{
     top: 312px;
     border-radius: 8px;
     text-align: center;
+    border: 0px;
+}
+.mailform .email:focus{
+    outline: none;
 }
 .mailform .sendbtn {
     position: absolute;
     left: 50px;
     top: 362px;
-    width: 70px;
+    width: 100px;
     border-radius: 8px;
     background-color: #333;
     color: whitesmoke;
+    height: 33px;
 }
 .mailform .sendbtn:hover{
     cursor: pointer;
