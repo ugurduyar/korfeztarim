@@ -194,8 +194,7 @@ select:focus{
     left: 50px;
     top: 202px;
     border-radius: 8px;
-    text-align: center;
-
+    text-align: left;
 }
 .mailform .email {
     position: absolute;
