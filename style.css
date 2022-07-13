@@ -186,6 +186,39 @@ select:focus{
     color: white;
 }
 
+.mailform .text {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 100px;
+    width: 400px;
+    left: 50px;
+    top: 202px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.mailform .email {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 400px;
+    left: 50px;
+    top: 312px;
+    border-radius: 8px;
+    text-align: center;
+}
+.mailform .sendbtn {
+    position: absolute;
+    left: 50px;
+    top: 362px;
+    width: 70px;
+    border-radius: 8px;
+    background-color: #333;
+    color: whitesmoke;
+}
+.mailform .sendbtn:hover{
+    cursor: pointer;
+}
 @media only screen and (max-width: 900px){
     
     nav ul {
