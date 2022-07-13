@@ -157,6 +157,19 @@ small{
     display: none;
 }
 
+.row2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #333;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+
 @media only screen and (max-width: 900px){
     
     nav ul {
