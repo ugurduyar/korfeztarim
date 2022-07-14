@@ -195,7 +195,7 @@ select:focus{
     width: 400px;
     left: 20px;
     top: 220px;
-    border-radius: 8px;
+    border-radius: 9px;
     text-align: left;
     border: 0px;
 }
