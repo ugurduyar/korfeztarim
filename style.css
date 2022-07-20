@@ -150,7 +150,8 @@ h4{
 }
 
 .offer{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: rgb(39,97,36);
+    background: linear-gradient(4deg, rgba(39,97,36,1) 0%, rgba(81,140,34,1) 23%, rgba(253,45,45,0) 59%);
     margin-top: 80px;
     padding: 30px 0;
 }
