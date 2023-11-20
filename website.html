@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyar Ticaret - Ürünlerimiz</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1a1a1a;
+        }
+
+        /* Product Styles */
+        .products {
+            display: none;
+        }
+
+        .products.active {
+            display: block;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-item {
+            flex: 0 1 calc(33.33% - 20px);
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product-item h3 {
+            color: #1a1a1a;
+        }
+
+        .product-item p {
+            margin-bottom: 15px;
+        }
+
+        /* Tab Styles */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 15px 25px;
+            background-color: #1a1a1a;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            margin-right: 10px; /* Add margin for separation */
+        }
+
+        .tab:last-child {
+            margin-right: 0; /* Remove margin from the last tab */
+        }
+
+        .tab:hover {
+            background-color: #333;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Duyar Ticaret Ürün Fiyat Listesi</h1>
+        <p>30 çuval ve üzeri alımlarda fırsatlar için iletişime geçiniz</p>
+
+        <!-- Contact Section for Phones -->
+        <div class="contact-section">
+            <p><a href="tel:+90 553 264 3230">0553 264 3230</a></p>
+        </div>
+    </header>
+
+    <section>
+
+        <!-- Tabs for switching between product types -->
+        <div class="tabs">
+            <div class="tab" onclick="showProducts('animalFeed')">Yem</div>
+            <div class="tab" onclick="showProducts('fertilizers')">Gübre</div>
+        </div>
+
+        <!-- Animal Feed Products -->
+        <div class="products animalFeed active">
+
+            <!-- Animal Feed Product 1 -->
+            <div class="product">
+                <div class="product-item">
+                    <img src="./yem/4x4.jpg" alt="Animal Feed 1">
+                    <h3>Pro 4x4</h3>
+                    <p>19 Protein Süt Yemi</p>
+                    <p>450₺</p>
+                </div>
+                <div class="product-item">
+                    <img src="./yem/aktif.jpg" alt="Animal Feed 1">
+                    <h3>Aktif</h3>
+                    <p>18 Protein Süt Yemi</p>
+                    <p>400₺</p>
+                </div>
+                <div class="product-item">
+                    <img src="./yem/besi-1.jpg" alt="Animal Feed 1">
+                    <h3>Besi</h3>
+                    <p>Besi Yemi</p>
+                    <p>400₺</p>
+                </div>
+                <div class="product-item">
+                    <img src="./yem/sprtosun.jpg" alt="Animal Feed 1">
+                    <h3>Spr Tosun  </h3>
+                    <p>Besi Yemi</p>
+                    <p>420₺</p>
+                </div>
+                <div class="product-item">
+                    <img src="./yem/kuzu.jpg" alt="Animal Feed 1">
+                    <h3>Kuzu </h3>
+                    <p>Kuzu Yemi</p>
+                    <p>520₺</p>
+                </div>
+                <div class="product-item">
+                    <img src="./yem/tutku.jpg" alt="Animal Feed 1">
+                    <h3>Tutku </h3>
+                    <p>Buzağı Yemi</p>
+                    <p>430₺</p>
+                </div>
+
+                <!-- Add more animal feed products as needed -->
+            </div>
+        </div>
+
+        <!-- Fertilizers Products -->
+        <div class="products fertilizers">
+
+            <!-- Fertilizer 1 -->
+            <div class="product">
+                <div class="product-item">
+                    <img src="./gubre/organic_fertilizer_1.png" alt="Fertilizer 1">
+                    <h3>Minorganic</h3>
+                    <p>Fermente Kanatlı Gübresi</p>
+                    <p>330₺</p>
+                </div>
+
+                <!-- Add more fertilizers as needed -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; Duyar Ticaret
+    </footer>
+
+    <script>
+        // JavaScript function to switch between product types
+        function showProducts(productType) {
+            // Hide all product types
+            document.querySelectorAll('.products').forEach(function (product) {
+                product.classList.remove('active');
+            });
+
+            // Show the selected product type
+            document.querySelector(`.products.${productType}`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
